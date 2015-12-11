@@ -102,9 +102,17 @@ nav ul {
     padding-top: 0.5%;
 }
 
-@media screen and (max-width: 39.9em) {
+@media screen and (max-width: 39.99em) {
     nav ul {
         width: 90%;
+    }
+    
+    nav i {
+        float: right;
+    }
+    
+    nav span {
+        float: left;
     }
 }
 
