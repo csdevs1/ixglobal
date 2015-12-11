@@ -101,21 +101,6 @@ nav ul {
     display: inline-block;
     padding-top: 0.5%;
 }
-
-@media screen and (max-width: 39.99em) {
-    nav ul {
-        width: 90%;
-    }
-    
-    nav i {
-        float: right;
-    }
-    
-    nav span {
-        float: left;
-    }
-}
-
 .option span {
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
@@ -132,6 +117,56 @@ i {
     animation: blur-text 0.9s 1 ease-in;
     color: #e0e0e0;
     font-size: 250%;
+}
+
+@media screen and (max-width: 39.99em) {
+    nav {
+        z-index: 1000;
+        background-color: #fff;
+        position: absolute;
+        box-shadow: 5px 10px 10px #888888;
+        height: 280px;
+        width: 60%;
+        border-bottom-right-radius: 10%; 
+    }
+    
+    nav ul {
+        width: 100%;
+    }
+    
+    nav i {
+        float: right;
+        color: #000;
+        padding-right: 15%;
+        border-right: 5px solid #cc0000;
+    }
+    
+    .option span {
+        margin-top: 6%;
+        float: left;
+        color: #000;
+    }
+    
+    .option:hover {
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        box-shadow: 0px 5px 10px #777;
+    }
+    
+    .option a span:hover {
+        text-shadow: -5px 5px 2px #ccc;
+    }
+    
+    .option:hover i {
+        text-shadow: 0px 0px 8px #cc0000;
+    }
+    
+    .option {
+        box-shadow: 0px 2px 2px #777;
+        float: left;
+        height: 68px;
+        width: 100%;
+    }
 }
 
 /* End of Nav */
