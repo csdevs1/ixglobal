@@ -208,6 +208,7 @@ i {
 }
 
 .circle {
+    margin-top: 10px;
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -219,6 +220,10 @@ i {
     margin-bottom: 20px;
     animation: circle-shadow 1.2s 1 ease-in;
     box-shadow: 5px 4px 10px #000, 5px -4px 10px #000, -5px -4px 10px #000, -5px 4px 10px #000;
+}
+
+.circle {
+    
 }
 
 .inner-circle {
