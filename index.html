@@ -9,12 +9,17 @@
         <link rel="stylesheet" href="css/app.css" />
         <link rel="stylesheet" href="foundation-icons/foundation-icons/foundation-icons.css" />
         <link rel="stylesheet" href="css/custom.css" />
+        <link rel="stylesheet" href="css/animate.css" />
         <link rel="stylesheet" href="css/geomanist_regular__italic/01.Geomanist_Regular/Geomanist_Regular_Webfontkit/stylesheet.css" />
         <link href='https://fonts.googleapis.com/css?family=Oswald:700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <script src='js/jquery.min.js'></script>
         <script src="js/custom.js"></script>
         <script src="js/smoothScroll.js"></script>
+        <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     </head>
     <body>
         <div class="wrapper banner">
@@ -69,7 +74,7 @@
                 </div> -->
             </nav>
             <div class="row">
-                <div class="large-12 medium-12 columns logo"><a>LOGO</a></div>
+                <div class="large-12 large-centered medium-12 columns small-centered  logo"><img src="img/logo1.png"></div>
             </div>
             <div class="row">
                 <div class="large-12 large-centered medium-12 small-12 small-centered columns quote"><h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1></div>
@@ -80,30 +85,35 @@
             <span><i class="fi-web"></i></span>
         </div>
         
-        <div class="row">
+        <div class="row abt-row">
             <div class="large-3 medium-12 small-12 columns">
                 <div class="circle">
                     <div class="stat inner-circle">
-                        <span class="stat-count">11</span>
+                        <span class="stat-count wow fadeIn">11</span>
                         <div class="milestone-details">Años</div>
                     </div>
                 </div>
             </div>
-            <div class="large-9 medium-12 small-12 columns">
+            <div class="large-9 medium-12 small-12 columns abt-desc">
+                <div class="description">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
             </div>
         </div>
         
         <section class="wrapper service" id="services">
             <div class="row">
                 <div class="large-12 medium-12 small-12 columns">
-                    <div class="title"><h1>Nuestros Servicios</h1></div>
-                    <div class="description">
+                    <div class="title wow pulse"><h1>Nuestros Servicios</h1></div>
+                    <div class="description wow fadeIn">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
                     </div>
                 </div>
-                <div class="large-4 medium-6 small-12 columns">
+                <div class="large-4 medium-6 small-12 columns wow fadeInDown">
                     <div class="large-12 medium-12 small-12 columns item bg-grey">
                         <div class="row">
                             <div class="large-12 medium-12 small-12 columns">
@@ -118,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="large-4 medium-6 small-12 columns">
+                <div class="large-4 medium-6 small-12 columns wow fadeInDown">
                     <div class="large-12 medium-12 small-12 columns bg-dark item">
                         <div class="row">
                             <div class="large-12 medium-12 small-12 columns">
@@ -133,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="large-4 medium-6 small-12 columns end">
+                <div class="large-4 medium-6 small-12 columns end wow fadeInDown">
                     <div class="large-12 medium-12 small-12 columns item bg-grey">
                         <div class="row">
                             <div class="large-12 medium-12 small-12 columns">
@@ -149,68 +159,6 @@
                     </div>
                 </div>
                 
-                <!--
-                <div class="large-3 medium-6 small-12 columns">
-                    <div class="large-12 medium-12 small-12 columns item bg-grey">
-                        <div class="row">
-                            <div class="large-12 medium-12 small-12 columns">
-                                <img src="img/informix.png">
-                            </div>
-                            <div class="large-12 medium-12 small-12 columns">
-                                <p>
-                                    Diseño y desarrollos de proyectos basados en tecnologías INFORMIX.
-                                </p>
-                                <a href="">Ver más <i class="fi-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="large-3 medium-6 small-12 columns">
-                    <div class="large-12 medium-12 small-12 columns bg-dark item">
-                        <div class="row">
-                            <div class="large-12 medium-12 small-12 columns">
-                                <img src="img/sap.png">
-                            </div>
-                            <div class="large-12 medium-12 small-12 columns">
-                                <p>
-                                    Sistemas ERP SAP ECC 6.0, Modulo mantenimiento de plantas.
-                                </p>
-                                <a href="">Ver más <i class="fi-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="large-3 medium-6 small-12 columns">
-                    <div class="large-12 medium-12 small-12 columns item bg-grey">
-                        <div class="row">
-                            <div class="large-12 medium-12 small-12 columns">
-                                <img src="img/informix.png">
-                            </div>
-                            <div class="large-12 medium-12 small-12 columns">
-                                <p>
-                                    Diseño y desarrollos de proyectos basados en tecnologías INFORMIX.
-                                </p>
-                                <a href="">Ver más <i class="fi-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="large-3 medium-6 columns">
-                    <div class="large-12 medium-12 small-12 columns bg-dark item">
-                        <div class="row">
-                            <div class="large-12 medium-12 small-12 columns">
-                                <img src="img/sap.png">
-                            </div>
-                            <div class="large-12 medium-12 small-12 columns">
-                                <p>
-                                    Sistemas ERP SAP ECC 6.0, Modulo mantenimiento de plantas.
-                                </p>
-                                <a href="">Ver más <i class="fi-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                -->
             </div>
             <!--<div class="row fullWidth">
                 <div class="large-6 medium-12 small-12 columns ">
@@ -222,6 +170,31 @@
                 <div class="large-6 medium-12 small-12 columns"></div>
             </div>-->
         </section>
+        
+        <footer>
+            <div class="row">
+                <div class="large-12 medium-12 small-12 columns ">
+                    <nav>
+                        <ul>
+                            <li><a>Contactenos</a></li>
+                            <li><a>Acerca de Nosotros</a></li>
+                            <li><a>Nuestros servicios</a></li>
+                        </ul>
+                    </nav>
+                    <hr class="style-separator">
+                    <div class="row">
+                        <div class="large-8 large-centered medium-8 small-12 small-centered columns social">
+                            <span>SIGUENOS EN</span>
+                            <ul>
+                                <li><a href=""><i class="fi-social-twitter"></i><p>Twitter</p></a></li>
+                                <li><a href=""><i class="fi-social-facebook"></i><p>Facebook</p></a></li>
+                                <li><a href=""><i class="fi-social-google-plus"></i><p>Google Plus</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         
         <script src="js/vendor/jquery.min.js"></script>
         <script src="js/vendor/what-input.min.js"></script>

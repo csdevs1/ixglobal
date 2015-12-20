@@ -17,3 +17,7 @@ $(document).ready(function($) {
         });
     }, 200);
 });
+/* Fade out on Scroll
+$(window).scroll(function() {
+    $(".logo").css({'opacity': 1-(($(this).scrollTop())/250)});          
+});*/
