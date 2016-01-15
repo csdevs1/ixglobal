@@ -60,13 +60,63 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 /* End of testing */
 
+/* Banner */
 .banner {
-    background-image: url(../img/background.jpg);
     background-position: center;
     background-size: cover;
-    /*background-attachment: fixed;*/
-    background-color: #000;
+    /*background-attachment: fixed;*/    
 }
+
+
+/* Separetor */
+.or-spacer {
+    margin-bottom: 15px;
+  width: 100%;
+  position: relative;
+}
+.or-spacer .mask {
+  overflow: hidden;
+  height: 20px;
+}
+.or-spacer .mask:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px / 12px;
+  box-shadow: 0 0 8px black;
+}
+.or-spacer span {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -25px;
+  left: 50%;
+  margin-left: -25px;
+  border-radius: 100%;
+  box-shadow: 0 2px 4px #999;
+  background: white;
+}
+.or-spacer span i {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  border-radius: 100%;
+  border: 1px dashed #aaa;
+  text-align: center;
+  line-height: 40px;
+  font-style: normal;
+  color: #999;
+}
+
+/* End of Separetor */
+
+/* End of Banner */
+
 
 .wrapper {
     margin-bottom: 10px;
@@ -108,8 +158,12 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     animation: blur-text 0.9s 1 ease-in;
 }
 
-.option a span:hover {
+.option a .columns:hover {
     transform: scale(1.18);
+}
+
+.option .columns {
+    min-height: 70px;
 }
 
 .option i:hover {
@@ -187,6 +241,14 @@ i {
 }
 
 /* End of Nav */
+
+/* HOME */
+
+.banner-home {
+    background-image: url(../img/background.jpg);
+    background-color: #000;
+}
+
 /*
 .logo {
     margin-top: 2%; 
@@ -200,6 +262,7 @@ i {
     display: block;
     margin: 0 auto;
     margin-bottom: 4%;
+    margin-top: 6%;
     max-width: 60%;    
     animation: fadeIn 1s 1 ease-in;
 }
@@ -223,53 +286,6 @@ i {
     font-size: calc(3vw + 3vh + 1vmin);
     color: #fcffff;
 }
-
-/* Separetor */
-.or-spacer {
-    margin-bottom: 15px;
-  width: 100%;
-  position: relative;
-}
-.or-spacer .mask {
-  overflow: hidden;
-  height: 20px;
-}
-.or-spacer .mask:after {
-  content: '';
-  display: block;
-  margin: -25px auto 0;
-  width: 100%;
-  height: 25px;
-  border-radius: 125px / 12px;
-  box-shadow: 0 0 8px black;
-}
-.or-spacer span {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  bottom: 100%;
-  margin-bottom: -25px;
-  left: 50%;
-  margin-left: -25px;
-  border-radius: 100%;
-  box-shadow: 0 2px 4px #999;
-  background: white;
-}
-.or-spacer span i {
-  position: absolute;
-  top: 4px;
-  bottom: 4px;
-  left: 4px;
-  right: 4px;
-  border-radius: 100%;
-  border: 1px dashed #aaa;
-  text-align: center;
-  line-height: 40px;
-  font-style: normal;
-  color: #999;
-}
-
-/* End of Separetor */
 
 @-webkit-keyframes circle-shadow {
     from {
@@ -456,6 +472,60 @@ background: linear-gradient(to left, #6a3093 , #a044ff); /* W3C, IE 10+/ Edge, F
     background-color: #373534;
     color: #fff;
     font-size: 1.1em;
+}
+
+/* END OF HOME */
+
+/* ABOUT */
+
+.banner-about {
+    background-image: url(../img/about.jpg);
+    background-color: #000;
+}
+
+.about-title {
+    text-align: center;    
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.about-title span h1 {
+    color: rgba(250, 250, 250, 0.4);
+    font-size: calc(5vw + 5vh + 0.5vmin);
+    font-weight: 500;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: calc(1vw + 1vh + 0.5vmin);
+}
+
+.about-content {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about-content i {
+    margin-right: 12px;
+    font-size: 11em;
+    color: #2f4f4f;
+}
+
+.about-content p {
+    font-family: 'Oswald', sans-serif;
+    float: right;
+    font-size: 2em;
+}
+
+.about-content p b {
+    letter-spacing: calc(1vw + 1vh + 0.5vmin);
+    font-weight: 700;
+    color: #2f4f4f;
+    font-size: 1.5em;
+    font-family: 'geomanist_regularregular', sans-serif;
+}
+
+.about-content p span {
+    font-weight: 600;
+    color: #1e90ff;
 }
 
 /* footer */
