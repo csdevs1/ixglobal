@@ -2,6 +2,13 @@
     transition: all 0.5s;
 }
 
+.disable-select {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -433,6 +440,7 @@ background: linear-gradient(to left, #6a3093 , #a044ff); /* W3C, IE 10+/ Edge, F
 }
 
 .item p {
+    cursor: default;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     font-size: 1.2em;
@@ -505,6 +513,7 @@ background: linear-gradient(to left, #6a3093 , #a044ff); /* W3C, IE 10+/ Edge, F
 }
 
 .about-content {
+    cursor: default;
     margin-top: 20px;
     text-align: center;
 }
