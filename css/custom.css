@@ -268,9 +268,11 @@ i {
     /*margin-top: 2%; */
     display: block;
     margin: 0 auto;
-    margin-bottom: 4%;
+    margin-bottom: 0%;
+    /* margin-bottom: 4%; */
     margin-top: 6%;
-    max-width: 60%;    
+    max-width: 65%;
+    /* max-width: 60%; */
     animation: fadeIn 1s 1 ease-in;
 }
 
@@ -492,8 +494,12 @@ background: linear-gradient(to left, #6a3093 , #a044ff); /* W3C, IE 10+/ Edge, F
 /* ABOUT */
 
 .banner-about {
-    background-image: url(../img/about.jpg);
+    background-image: url(../img/about3.jpg);
     background-color: #000;
+}
+
+.separator-content{
+    margin-bottom: 25px;
 }
 
 .about-title {
@@ -504,18 +510,43 @@ background: linear-gradient(to left, #6a3093 , #a044ff); /* W3C, IE 10+/ Edge, F
 }
 
 .about-title span h1 {
-    color: rgba(250, 250, 250, 0.4);
+    color: rgba(250, 250, 250, 0.88);
     font-size: calc(5vw + 5vh + 0.5vmin);
     font-weight: 500;
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
     letter-spacing: calc(1vw + 1vh + 0.5vmin);
+    text-shadow: -0.12em 0.12em 0.12em rgba(15, 15, 15, 0.4);
 }
 
 .about-content {
     cursor: default;
     margin-top: 20px;
-    text-align: center;
+    text-align: right;
+}
+
+.vision {
+    text-align: left;
+}
+
+.vision p::first-line {
+    letter-spacing: 1vh;
+    text-shadow: 0px 0px 8px #000;
+}
+
+@media screen and (max-width: 39.99em) {
+    .about-content {
+        text-align: center;
+    }
+    
+    .vision {
+        text-align: center;
+    }
+}
+
+.about-content > .columns {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .about-content i {
@@ -542,6 +573,57 @@ background: linear-gradient(to left, #6a3093 , #a044ff); /* W3C, IE 10+/ Edge, F
     font-weight: 600;
     color: #1e90ff;
 }
+
+/* Contact Us */
+
+.contact-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ddd;
+}
+
+.contact-form label {
+    font-family: 'geomanist_regularregular', sans-serif;
+    font-size: 1.1em;
+    color: #000;
+    font-weight: 900;
+}
+
+.contact-form  input[type='text'], .contact-form  input[type='email'] {
+    background-color: transparent;
+    background-image: none;
+    outline: 0;
+    border: 0 solid #999;
+    border-bottom-width: 3px;
+    border-radius: 0;
+    cursor: pointer;
+    line-height: normal;
+    letter-spacing: .05em;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.contact-form textarea {
+    min-height: 250px;
+    resize: none;
+}
+
+#textarea_feedback {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+    color: #888;
+}
+
+.button {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+}
+
+/* End of Contact Us */
 
 /* footer */
 footer {
@@ -628,7 +710,7 @@ footer nav ul li a:hover {
     color: #d34836;
 }
 
-@media screen and (max-width: 39.99em) {    
+@media screen and (max-width: 39.99em) {
     footer nav ul li, footer ul li {
         margin-right: 3%;
         margin-bottom: 2%;

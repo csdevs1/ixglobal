@@ -22,6 +22,18 @@ $(window).scroll(function() {
     $(".logo").css({'opacity': 1-(($(this).scrollTop())/250)});          
 });*/
 
+$(document).ready(function() {
+    var text_max = 1445;
+    $('#textarea_feedback').html('(Quedan ' + text_max + ' caracteres)');
+
+    $('#textarea').keyup(function() {
+        var text_length = $('#textarea').val().length;
+        var text_remaining = text_max - text_length;
+
+        $('#textarea_feedback').html('(Quedan ' +text_remaining + ' caracteres)');
+    });
+});
+
 $(function () {
     var fx = function fx() {
     $(".stat-number").each(function (i, el) {
