@@ -71,7 +71,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 .banner {
     background-position: center;
     background-size: cover;
-    /*background-attachment: fixed;*/    
+    /*background-attachment: fixed;*/   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top bottom;
+    background-color: #000;
 }
 
 
@@ -279,7 +283,8 @@ i {
 .quote {
     cursor: default;
     text-shadow: -2px -2px 20px #888, -4px -1px 2px #000;
-    font-family: 'geomanist_regularregular', sans-serif;
+    /*font-family: 'geomanist_regularregular', sans-serif;*/
+    font-family: 'Poiret One', cursive;
     font-size: calc(1vw + 1vh + 0.5vmin);
     font-weight: 900;
     color: #FFF;
@@ -491,32 +496,34 @@ background: linear-gradient(to left, #6a3093 , #a044ff); /* W3C, IE 10+/ Edge, F
 
 /* END OF HOME */
 
-/* ABOUT */
-
-.banner-about {
-    background-image: url(../img/about3.jpg);
-    background-color: #000;
-}
-
-.separator-content{
-    margin-bottom: 25px;
-}
-
-.about-title {
+.title-banner {
+    text-align: center;
     cursor: default;
     text-align: center;    
     margin-top: 4em;
     margin-bottom: 4em;
 }
 
-.about-title span h1 {
+.title-banner span h1 {
     color: rgba(250, 250, 250, 0.88);
-    font-size: calc(5vw + 5vh + 0.5vmin);
+    font-size: calc(6vw + 6vh + 1vmin);
     font-weight: 500;
     font-family: 'Anton', sans-serif;
+    /*font-family: 'Poiret One', cursive;*/
     text-transform: uppercase;
     letter-spacing: calc(1vw + 1vh + 0.5vmin);
     text-shadow: -0.12em 0.12em 0.12em rgba(15, 15, 15, 0.4);
+}
+
+/* ABOUT */
+
+.banner-about {
+    background-image: url(http://i300.photobucket.com/albums/nn24/carlosxmrcy/Panorama3-1.jpg);
+    background-color: #000;
+}
+
+.separator-content{
+    margin-bottom: 25px;
 }
 
 .about-content {
@@ -539,6 +546,12 @@ background: linear-gradient(to left, #6a3093 , #a044ff); /* W3C, IE 10+/ Edge, F
         text-align: center;
     }
     
+    .vision {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 64em) {
     .vision {
         text-align: center;
     }
@@ -574,7 +587,26 @@ background: linear-gradient(to left, #6a3093 , #a044ff); /* W3C, IE 10+/ Edge, F
     color: #1e90ff;
 }
 
+#city {
+    color: firebrick;
+}
+
+/* END OF ABOUT */
+
+/* OUR SERVICES */
+
+.banner-service {
+    background-image: url(http://randomwallpapers.net/multitasking-programmer-digital-art-1920x1080-wallpaper241503.jpg);
+    background-color: #000;  
+}
+
+/* END OF OUR SERVICES */
+
 /* Contact Us */
+
+.banner-contact {
+    background-image: url(../img/contact-banner.png);
+}
 
 .embed-container {
     position: relative;
@@ -595,6 +627,17 @@ background: linear-gradient(to left, #6a3093 , #a044ff); /* W3C, IE 10+/ Edge, F
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #ddd;
+}
+
+.contact-title{
+    margin-top: 10em;
+    margin-bottom: 10em;
+    padding: 2px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.contact-title span h1 {
+    color: rgba(250, 250, 250, 0.98);
 }
 
 .contact-form label {
@@ -636,6 +679,10 @@ background: linear-gradient(to left, #6a3093 , #a044ff); /* W3C, IE 10+/ Edge, F
 .button {
     font-family: 'Lato', sans-serif;
     font-size: 1.1em;
+}
+
+.laptop {
+    width: 100%;
 }
 
 /* End of Contact Us */
