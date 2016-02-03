@@ -1,3 +1,10 @@
+$(window).load(function() {
+    /*
+        Note: Stop page scrolling while loading.
+    */
+    $("#loader").delay(100).hide();
+});
+
 $(document).ready(function($) {
  /*   setTimeout(function() {
         function count($this){
